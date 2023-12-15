@@ -1,0 +1,22 @@
+def find_frequency_count(arr):
+    arr.sort()
+
+    frequency_count = {}
+
+    for num in arr:
+        if num not in frequency_count:
+            frequency_count[num] = 0
+        
+        frequency_count[num] += 1
+
+    
+    for key in sorted(frequency_count):
+        print(frequency_count[key], end=' ')
+
+
+n = int(input())
+arr = list(map(int, input().split()))
+
+
+find_frequency_count(arr)
+                                                                                                                            
