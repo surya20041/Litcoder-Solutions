@@ -1,0 +1,13 @@
+def getSum(a, b):
+    while b != 0:
+        carry = a & b
+        a = a ^ b  
+        b = carry << 1  
+    return a
+
+input_str = input()
+numbers=map(int,input_str.split(','))
+a,b=numbers
+result = getSum(a, b)
+print(result)
+                                                                                                                            
